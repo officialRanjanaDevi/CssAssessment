@@ -1,0 +1,40 @@
+#assignment {
+    background: linear-gradient(163deg, rgb(30 27 75) 50%, rgb(224 231 255) 50%);
+    @apply font-sans;
+  }
+  
+  .grid-container {
+    @apply grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 xl:gap-8 lg:gap-6 md:gap-4 mt-16 gap-y-20;
+  }
+  
+  .boxes {
+    @apply bg-white relative rounded-sm text-center px-2 xl:px-4 py-8;
+  }
+  
+  .boxes > h3 {
+    @apply text-lg mt-6 font-bold mb-3;
+  }
+  
+  a {
+    @apply uppercase font-bold mt-4 block;
+  }
+  
+  .boxes:hover {
+    animation: rotateY 2s ease-in-out;
+  }
+  
+  @keyframes rotateY {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  img {
+    pointer-events: none;
+    left: 34%;
+    @apply rounded-full absolute -top-12 border-4 border-indigo-950 w-24 object-cover;
+  }
+  
